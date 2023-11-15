@@ -39,9 +39,50 @@ header {
     h1 {
         font-family: "Roboto Condensed", sans-serif;
         text-transform: uppercase;
-        color: #FFC65B;
+        color: #4B4453;
         letter-spacing: 2px;
+        text-align: center;
 
+    }
+
+    #menu {
+        font-size: 110%;
+        letter-spacing: 3px;
+        list-style-type: none; /* remove bulletpoints */
+
+    }
+
+    menu > li {
+        margin-bottom: 1rem;
+    }
+    
+    .about {
+        border-bottom: thick double whitesmoke; /*underline "About" with thick double line */
+    }
+
+    /* Navbar with dropdown toggle */
+    nav {
+        position: absolute;
+        background-color: inherit;
+        width: 100%;
+        left: 0;
+        padding: 0 1rem;
+        box-shadow: 0 2px 2px black;
+        display: none;
+        top: 100%; 
+        font-size: small;
+
+    }
+    #nav-toggle:checked~nav {
+        display:block;
+    }
+
+    #nav-toggle {
+        display: none;
+    }
+
+    .nav-toggle-label {
+        font-size: 2rem;
     }
 
 /* Main */
