@@ -14,25 +14,47 @@
         min-height: 100vh;
         display: flex;
         flex-direction: column;
-        color: black
+        color: black;
+        font-family: "Roboto-mono", "Playfair Display", sans-serif;
     }
 
 
 
 /* Header */
 header {
-    background-color: yellow;
-
+    background-color: lightblue;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
+    header a{
+        text-decoration: none;
+        color: inherit;
+    }
+    h1 {
+        font-family: "Roboto Condensed", sans-serif;
+        text-transform: uppercase;
+        color: #FFC65B;
+        letter-spacing: 2px;
+
+    }
 
 /* Main */
 main {
-    background-color: gray
+    background-color: whitesmoke;
+    flex: 1 0 auto;
+    margin-top: 25px;
 
 }
 
 /* Footer */
 footer {
- background-color: aquamarine;
+ background-color: black;
+ color:white;
 
 }
