@@ -52,6 +52,14 @@ header {
 
     }
 
+   #menu a:hover {
+    background-color: orange;
+
+   }       
+
+        
+    }
+
     menu > li {
         margin-bottom: 1rem;
     }
@@ -69,16 +77,18 @@ header {
         padding: 0 1rem;
         box-shadow: 0 2px 2px black;
         display: none;
-        top: 100%; 
+        top: 100%;  /* ensures the Title stays uncovered when pressed menu */
         font-size: small;
 
     }
     #nav-toggle:checked~nav {
         display:block;
+        
     }
 
     #nav-toggle {
         display: none;
+        
     }
 
     .nav-toggle-label {
@@ -90,12 +100,40 @@ main {
     background-color: whitesmoke;
     flex: 1 0 auto;
     margin-top: 25px;
-
 }
-
 /* Footer */
 footer {
  background-color: orange;
  color:white;
+}
 
+/*Settings for screens 768px */
+@media screen and (min-width: 768px) {
+    display: block;
+    position: relative;
+    box-shadow: 1rem;
+    width: fit-conent;
+    padding-right: 1.5rem; /* Heading won't stick to the left screen */
+}
+
+#menu {
+    display: flex; /*Ensures navigation goes in line, not a column */
+
+}
+#menu > li {
+    padding-left: 1 rem;
+
+}
+.nav-toggle-label {
+    display:none;
+    
+}
+#logo {
+    font-size: 280%; /* Larger header */
+    line-height: 75px; /*Provides more space on the top */
+    margin: 0 0.5rem;
+}
+/* Main Content */
+main {
+    top-margin: 76px; /Push main content down to accomodate large header */
 }
